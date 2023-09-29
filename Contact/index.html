@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionnaire de contact</title>
+    <link rel="stylesheet" href="./css/style.css">  
+</head>
+
+<body>
+    <div>
+        <h1>Gestionnaire de contact</h1>
+    </div>
+    <div id="content">
+        <table>
+            <thead>
+                <tr>
+                    <th>Civilité</th>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Téléphone</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <div>
+        <button id="addContact">Ajouter un contact</button>
+    </div>
+    <div id="popup">
+        <div id="popup-content" value="">
+            <tr>
+                <th>
+                    <label for="genre">Civilité</label>
+                    <select name="genre" id="genre">
+                        <option value="Monsieur">Monsieur</option>
+                        <option value="Madame">Madame</option>
+                        <option value="Hélicoptère de combat">Hélicoptère de combat</option>
+                    </select>
+                </th>
+                <th>
+                    <label for="nom">Nom</label>
+                    <input type="text" name="nom" id="nom" placeholder="Nom">
+                </th>
+                <th>
+                    <label for="prenom">Prénom</label>
+                    <input type="text" name="prenom" id="prenom" placeholder="Prénom">
+                </th>
+                <th>
+                    <label for="tel">Téléphone</label>
+                    <input type="text" name="tel" id="tel" placeholder="Téléphone">
+            </tr>
+            <button id="add">Ajouter</button>
+            <button id="cancel">Annuler</button>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
